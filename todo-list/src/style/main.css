@@ -1,0 +1,174 @@
+*{
+    --main-color: #7EB4FF;
+    --text-color: #2E5B9A;
+    --text-btn-color: #B9D6FF;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: "Lato Regular";
+}
+
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding: 100px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.todo-list__add{
+    display: flex;
+}
+
+.todo-list__add input{
+    padding: 20px 300px 20px 20px;
+    border: transparent;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.todo-list__add input::placeholder, input[type~="text"]{
+    font-size: 30px;
+}
+
+.todo-list__add button{
+    font-size: 40px;
+    padding: 5px 20px;
+    border-radius: 50%;
+
+    color: var(--text-btn-color);
+    border: 3px solid var(--main-color);
+    background-image: -webkit-linear-gradient(20deg, var(--main-color) 50%, transparent 50%);
+    background-image: linear-gradient(20deg, var(--main-color) 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+
+.todo-list__add button:hover{
+    cursor: pointer;
+    background-position: 100%;
+    color: var(--main-color);
+}
+
+ul{
+    margin-top: 50px;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    font-size: 35px;
+    color: var(--text-color);
+}
+
+ul li button{
+    background-color: transparent;
+    border: transparent;
+}
+
+ul li button img{
+    width: 40px;
+}
+
+ul li button img:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('../assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 1200px) {
+    .todo-list{
+        max-width: 600px;
+    }
+
+    .todo-list__add input{
+        padding: 20px 200px 20px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .todo-list{
+        max-width: 500px;
+    }
+
+    .todo-list__add input{
+        padding: 20px 100px 20px 20px;
+    }
+
+    ul li{
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px){
+    .todo-list{
+        max-width: 400px;
+        padding: 75px;
+    }
+
+    .todo-list__add input{
+        padding: 20px 50px 20px 20px;
+    }
+
+    ul li{
+        width: 400px;
+    }
+}
+
+@media (max-width: 576px){
+    .todo-list{
+        max-width: 200px;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .todo-list__add{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .todo-list__add button{
+        width: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .todo-list__add input{
+        padding: 20px 20px 20px 20px;
+        max-width: 200px;
+    }
+
+    .todo-list__add input::placeholder, input[type~="text"]{
+        font-size: 18px;
+    }
+
+    ul li{
+        width: 200px;
+    }
+}
