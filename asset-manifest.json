@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/redux-todo-list/static/css/main.4e1e4593.css",
+    "main.js": "/redux-todo-list/static/js/main.ed9ca976.js",
+    "static/media/Lato-Regular.ttf": "/redux-todo-list/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/done.svg": "/redux-todo-list/static/media/done.f0f1192f9336f7c51fff9c7e7d5cb9ad.svg",
+    "static/media/delete.svg": "/redux-todo-list/static/media/delete.c70f29ba3ffb7b75330de0376f9757ad.svg",
+    "index.html": "/redux-todo-list/index.html",
+    "main.4e1e4593.css.map": "/redux-todo-list/static/css/main.4e1e4593.css.map",
+    "main.ed9ca976.js.map": "/redux-todo-list/static/js/main.ed9ca976.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e1e4593.css",
+    "static/js/main.ed9ca976.js"
+  ]
+}
